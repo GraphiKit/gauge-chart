@@ -1,7 +1,8 @@
 {
-  "name": "gauge-chart",
+  "name": "light-gauge-chart",
+  "private": false,
   "version": "1.0.0",
-  "description": "Simple and lightweight vector gauge chart",
+  "description": "Simple and lightweight canvas gauge chart",
   "main": "dist/index.min.js",
   "module": "dist/index.mjs",
   "exports": {
