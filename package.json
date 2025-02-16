@@ -1,5 +1,5 @@
 {
-  "name": "light-gauge-chart",
+  "name": "@graphikit/light-gauge-chart",
   "private": false,
   "version": "1.0.0",
   "description": "Simple and lightweight canvas gauge chart",
