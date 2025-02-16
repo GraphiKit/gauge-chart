@@ -2,9 +2,15 @@
   "name": "gauge-chart",
   "version": "1.0.0",
   "description": "Simple and lightweight vector gauge chart",
-  "main": "index.js",
+  "main": "dist/index.min.js",
+  "module": "dist/index.mjs",
+  "exports": {
+    "require": "./dist/index.min.js",
+    "import": "./dist/index.mjs",
+    "default": "./dist/index.mjs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "terser src/index.mjs -o dist/index.mjs --compress --mangle && terser src/index.cjs -o dist/index.cjs --compress --mangle"
   },
   "repository": {
     "type": "git",
@@ -15,10 +21,13 @@
     "chart",
     "light"
   ],
-  "author": "jguillaume",
+  "author": "jguillaumesio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/graphikit/gauge-chart/issues"
   },
-  "homepage": "https://github.com/graphikit/gauge-chart#readme"
+  "homepage": "https://github.com/graphikit/gauge-chart#readme",
+  "devDependencies": {
+    "terser": "^5.39.0"
+  }
 }
